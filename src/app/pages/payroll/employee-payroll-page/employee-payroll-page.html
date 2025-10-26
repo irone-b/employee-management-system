@@ -9,6 +9,10 @@
   </section>
 
   <aside>
-    <nav class="action-nav"></nav>
+    <nav class="action-nav">
+      <ac-nav-item [isActive]="false" [title]="'Action 1'" [icon]="'school'" />
+      <div class="spacer-vertical"></div>
+      <ac-nav-item [isActive]="true" [title]="'Action 2'" [icon]="'school'" />
+    </nav>
   </aside>
 </div>

@@ -51,6 +51,13 @@
   width: 1px;
 }
 
+.spacer-vertical {
+  align-self: stretch;
+  height: 1px;
+  background: var(--grey-200);
+  flex-shrink: 0;
+}
+
 .text-stack-left-aligned {
   display: flex;
   flex-direction: column;
@@ -62,4 +69,10 @@
   flex-direction: column;
   align-items: flex-end;
   gap: var(--size-2);
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
