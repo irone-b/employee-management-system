@@ -1,0 +1,8 @@
+@mixin m3-type($size, $line-height, $weight, $color, $tracking: 0rem) {
+  font-family: 'Roboto', system-ui, Arial, sans-serif;
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+  letter-spacing: $tracking;
+  color: $color;
+}

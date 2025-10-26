@@ -1,0 +1,15 @@
+@use '../utilities/typography' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-optical-sizing: auto;
+  @extend .body-regular-medium;
+}
