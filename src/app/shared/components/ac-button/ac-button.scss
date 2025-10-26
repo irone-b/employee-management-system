@@ -78,3 +78,31 @@
   color: var(--btn-tertiary-fg);
   border: none;
 }
+
+.btn--icon {
+  width: var(--default-icon-button-size);
+  height: var(--default-icon-button-size);
+  padding: 0;
+  border-radius: var(--size-8);
+  background: var(--btn-icon-bg);
+  color: var(--btn-icon-fg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+
+  &:hover:not(:disabled) {
+    background: var(--btn-icon-bg-hover);
+  }
+
+  &:active:not(:disabled) {
+    background: var(--btn-icon-bg-active);
+    transform: scale(0.96);
+  }
+
+  .material-icons {
+    font-size: var(--default-icon-size);
+    color: currentColor;
+    transition: transform 0.1s ease;
+  }
+}

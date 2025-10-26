@@ -1,0 +1,16 @@
+<div
+  class="ac-stat-item"
+  [class.ac-stat-item--neutral]="tone === 'neutral'"
+  [class.ac-stat-item--info]="tone === 'info'"
+  [class.ac-stat-item--success]="tone === 'success'"
+  [class.ac-stat-item--danger]="tone === 'danger'"
+>
+  <div class="ac-stat-item--icon">
+    <span class="material-icons">{{ icon }}</span>
+  </div>
+
+  <div class="text-stack-right-aligned">
+    <div class="label-regular-small">{{ label }}</div>
+    <div class="body-bold-large">{{ amount | currencyFormat }}</div>
+  </div>
+</div>

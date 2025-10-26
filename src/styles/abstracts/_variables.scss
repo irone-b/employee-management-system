@@ -39,6 +39,10 @@
   --text-color-bold: var(--black);
   --text-color-regular: var(--grey-800);
 
+  //default icon vars
+  --default-icon-size: var(--size-24);
+  --default-icon-button-size: var(--size-36);
+
   //borders
   --border-light: var(--grey-100);
   --border-default: var(--size-1) solid var(--border-light);

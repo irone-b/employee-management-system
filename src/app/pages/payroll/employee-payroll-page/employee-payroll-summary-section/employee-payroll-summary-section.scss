@@ -1,0 +1,50 @@
+.employee-payroll-summary-section-wrapper {
+  border: var(--border-default);
+  background-color: var(--panel-bg);
+  border-radius: var(--size-16);
+  height: 100%;
+
+  .header-section {
+    padding: var(--size-16) var(--size-8);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4);
+
+    .title-section {
+      display: flex;
+      gap: var(--size-8);
+      align-items: center;
+    }
+
+    .details-section {
+      display: flex;
+      gap: var(--size-4);
+      margin-left: calc(var(--default-icon-button-size) + var(--size-8));
+
+      .text-stack-left-aligned {
+        flex: 1;
+      }
+    }
+  }
+
+  .overview-section {
+    border-top: var(--border-default);
+    padding: var(--size-16) var(--size-8);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-8);
+
+    .body-bold-large {
+      padding: 0px var(--size-16);
+    }
+
+    .card-section {
+      padding: var(--size-16);
+      border-radius: var(--size-16);
+      border: var(--border-default);
+      display: flex;
+      flex-direction: column;
+      gap: var(--size-16);
+    }
+  }
+}
