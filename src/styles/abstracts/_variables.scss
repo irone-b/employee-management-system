@@ -26,18 +26,27 @@
   --grey-800: #333333;
 
   /* Usage/Semantic based tokens */
+  //surfaces
+  --panel-bg: var(--white);
+
   //actions
   --hover-bg: var(--blue-50);
   --hover-fg-highlighted: var(--blue-500);
 
   //text
   --label-color: var(--grey-600);
+  --label-regular: var(--grey-600);
   --text-color-bold: var(--black);
   --text-color-regular: var(--grey-800);
 
   //borders
   --border-light: var(--grey-100);
   --border-default: var(--size-1) solid var(--border-light);
+
+  //inputs
+  --input-bg: var(--blue-50);
+  --input-fg: var(--grey-800);
+  --input-focus-bg: var(--blue-100);
 
   //spacing
   --size-1: 0.0625rem; /* 1px */

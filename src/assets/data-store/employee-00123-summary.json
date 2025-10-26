@@ -1,0 +1,14 @@
+{
+  "employee": {
+    "id": "00123",
+    "number": "E008",
+    "name": "Hannah Smoterich-Barr Jip",
+    "team": "General worker"
+  },
+  "totals": { "earnings": 13140.68, "deductions": 12000.0, "net": 1140.68 },
+  "contributions": [
+    { "code": "UIF", "amount": 35.32 },
+    { "code": "PAYE", "amount": 0.0 },
+    { "code": "TOTAL", "amount": 35.32 }
+  ]
+}

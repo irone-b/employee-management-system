@@ -1,0 +1,52 @@
+@use './typography' as *;
+
+//global styling class for now, but can be extracted into a component later
+.ac-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .search-icon {
+    position: absolute;
+    left: var(--size-8);
+    color: var(--input-fg);
+    font-size: var(--size-24);
+  }
+
+  .ac-input {
+    width: 20%;
+    background-color: var(--input-bg);
+    border-radius: var(--size-24);
+    padding: var(--size-8);
+    padding-left: var(--size-36);
+    outline: none;
+    border: 0;
+    @extend .m3-body-large;
+    color: var(--input-fg);
+
+    &:focus {
+      box-shadow: 0 0 0 1px var(--input-focus-bg);
+    }
+
+    &::placeholder {
+      @extend .m3-body-large;
+      color: var(--input-fg);
+      opacity: 1;
+    }
+  }
+}
+
+.text-align-r {
+  text-align: right !important;
+}
+
+.text-align-l {
+  text-align: left !important;
+}
+
+.spacer {
+  flex: 1;
+  align-self: stretch;
+  background: var(--border-light);
+  width: 1px;
+}

@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/roboto/RobotoFlex-Variable.woff2') format('woff2-variations');
+  src: url('../../assets/fonts/roboto/Roboto-VariableFont_wdth\,wght.ttf')
+    format('woff2-variations');
   font-weight: 100 1000;
   font-stretch: 75% 125%;
   font-style: normal;
@@ -9,7 +10,8 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/roboto/RobotoFlex-Variable.woff2') format('woff2-variations');
+  src: url('../../assets/fonts/roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf')
+    format('woff2-variations');
   font-weight: 100 1000;
   font-stretch: 75% 125%;
   font-style: italic;

@@ -13,7 +13,7 @@
 }
 
 .label-regular-medium {
-  @include m3-type(0.75rem, 0.875rem, 400, var(--text-color-regular), 0.03125rem);
+  @include m3-type(0.75rem, 0.875rem, 400, var(--label-regular), 0.03125rem);
 }
 
 .label-bold-medium {

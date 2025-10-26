@@ -1,0 +1,42 @@
+<div class="ac-table-wrapper">
+  @if (filterable()) {
+  <div class="ac-toolbar">
+    <div class="ac-toolbar-left">
+      <div class="ac-input-container">
+        <span class="material-icons search-icon">search</span>
+
+        <!-- TODO: Extract to custom input component using ControlValueAccessor for form integration -->
+        <input
+          type="text"
+          class="ac-input"
+          [placeholder]="globalFilterPlaceholder()"
+          [value]="searchQuery()"
+          (input)="searchQuery.set($any($event.target).value)"
+        />
+      </div>
+    </div>
+
+    <div class="ac-toolbar-right">
+      <ng-container [ngTemplateOutlet]="toolbarActionsTemplate"></ng-container>
+    </div>
+  </div>
+  }
+
+  <table class="ac-table">
+    <thead class="ac-thead">
+      @if (headerTemplate) {
+      <ng-container [ngTemplateOutlet]="headerTemplate"></ng-container>
+      }
+    </thead>
+
+    <tbody class="ac-tbody">
+      @if (bodyTemplate) { @for (row of filteredAndSortedRows(); track row) {
+      <ng-container
+        [ngTemplateOutlet]="bodyTemplate"
+        [ngTemplateOutletContext]="{ $implicit: row }"
+      >
+      </ng-container>
+      } }
+    </tbody>
+  </table>
+</div>
