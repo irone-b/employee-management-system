@@ -1,0 +1,38 @@
+@use '../../../../styles/utilities/typography';
+
+.ac-stat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .ac-stat-item--icon {
+    width: var(--size-40);
+    height: var(--size-40);
+    border-radius: var(--size-8);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--icon-bg);
+    color: var(--icon-fg);
+  }
+
+  &.ac-stat-item--neutral {
+    --icon-bg: var(--green-50);
+    --icon-fg: var(--green-600);
+  }
+
+  &.ac-stat-item--info {
+    --icon-bg: var(--blue-690);
+    --icon-fg: var(--white);
+  }
+
+  &.ac-stat-item--success {
+    --icon-bg: var(--green-500);
+    --icon-fg: var(--white);
+  }
+
+  &.ac-stat-item--danger {
+    --icon-bg: var(--red-600);
+    --icon-fg: var(--white);
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Drafting",
+    "description": "Lorem ipsum dolor",
+    "type": 1,
+    "quantity": 3,
+    "rateAmount": 20,
+    "hasWarning": true
+  },
+  {
+    "id": 2,
+    "name": "Driving",
+    "description": null,
+    "type": 1,
+    "quantity": 4,
+    "rateAmount": null,
+    "hasWarning": false
+  },
+  {
+    "id": 3,
+    "name": "Cutting",
+    "description": null,
+    "type": 2,
+    "quantity": 6,
+    "rateAmount": null,
+    "hasWarning": true
+  },
+  {
+    "id": 4,
+    "name": "Task 1",
+    "description": "Lorem ipsum dolor",
+    "type": 3,
+    "quantity": 3,
+    "rateAmount": 400,
+    "hasWarning": false
+  },
+  {
+    "id": 5,
+    "name": "Task 2",
+    "description": "-",
+    "type": 2,
+    "quantity": 4,
+    "rateAmount": 599,
+    "hasWarning": false
+  },
+  {
+    "id": 6,
+    "name": "Task 3",
+    "description": "Lorem ipsum dolor",
+    "type": 3,
+    "quantity": 6,
+    "rateAmount": 60,
+    "hasWarning": false
+  },
+  {
+    "id": 7,
+    "name": "Task 4",
+    "description": "Lorem ipsum dolor",
+    "type": 2,
+    "quantity": 3,
+    "rateAmount": 80,
+    "hasWarning": true
+  },
+  {
+    "id": 8,
+    "name": "Task 5",
+    "description": "Lorem ipsum dolor",
+    "type": 1,
+    "quantity": 4,
+    "rateAmount": 100,
+    "hasWarning": false
+  }
+]

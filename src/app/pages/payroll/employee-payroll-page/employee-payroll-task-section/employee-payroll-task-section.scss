@@ -1,0 +1,21 @@
+.employee-task-payroll-view-wrapper {
+  border: var(--border-default);
+  background-color: var(--panel-bg);
+  border-radius: var(--size-16);
+  height: 100%;
+
+  .icon-column {
+    width: calc(var(--default-icon-size) + var(--size-36));
+
+    .warning-icon {
+      display: flex;
+      align-items: center;
+      color: var(--grey-800);
+    }
+  }
+
+  .action-column {
+    width: 8rem;
+    padding-left: var(--size-56);
+  }
+}

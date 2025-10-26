@@ -1,0 +1,74 @@
+:root {
+  /* Base colour tokens */
+  // Blue
+  --blue-700: #176982; /* primary/700 */
+  --blue-690: #166983; /* blue alt (mislabeled “secondary” in file) */
+  --blue-500: #617b9e;
+  --blue-100: #dfe5ec;
+  --blue-80: #eff2f5;
+  --blue-50: #eff3f5;
+
+  // Green
+  --green-600: #7a9933;
+  --green-500: #a5c757;
+  --green-50: #f5f9ec;
+
+  // Red
+  --red-600: #ff3d00;
+
+  // Neutrals
+  --white: #ffffff;
+  --black: #000000;
+  --grey-100: #e6e6e6;
+  --grey-200: #cccccc;
+  --grey-600: #666666;
+  --grey-700: #4d4d4d;
+  --grey-800: #333333;
+
+  /* Usage/Semantic based tokens */
+  //surfaces
+  --panel-bg: var(--white);
+
+  //actions
+  --hover-bg: var(--blue-50);
+  --hover-fg-highlighted: var(--blue-500);
+  --active-bg: var(--blue-100);
+  --active-fg: var(--black);
+
+  //text
+  --label-color: var(--grey-600);
+  --label-regular: var(--grey-600);
+  --text-color-bold: var(--black);
+  --text-color-regular: var(--grey-800);
+
+  //default icon vars
+  --default-icon-size: var(--size-24);
+  --default-icon-button-size: var(--size-36);
+
+  //borders
+  --border-light: var(--grey-100);
+  --border-default: var(--size-1) solid var(--border-light);
+
+  //inputs
+  --input-bg: var(--blue-50);
+  --input-fg: var(--grey-800);
+  --input-focus-bg: var(--blue-100);
+
+  //spacing
+  --size-1: 0.0625rem; /* 1px */
+  --size-4: 0.25rem; /* 4px */
+  --size-8: 0.5rem; /* 8px */
+  --size-12: 0.75rem; /* 12px */
+  --size-16: 1rem; /* 16px */
+  --size-20: 1.25rem; /* 20px */
+  --size-24: 1.5rem; /* 24px */
+  --size-32: 2rem; /* 32px */
+  --size-36: 2.25rem; /* 36px */
+  --size-40: 2.5rem; /* 40px */
+  --size-48: 3rem; /* 48px */
+  --size-56: 3.5rem; /* 56px */
+  --size-64: 4rem; /* 64px */
+  --size-80: 5rem; /* 80px */
+  --size-96: 6rem; /* 96px */
+  --size-128: 8rem; /* 128px */
+}

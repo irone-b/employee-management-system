@@ -1,0 +1,53 @@
+@use '../abstracts/mixins' as *;
+
+.label-button-small {
+  @include m3-type(0.625rem, 0.75rem, 500, var(--label-color), 0.03125rem);
+}
+
+.m3-body-large {
+  @include m3-type(1rem, 1.5rem, 400, var(--grey-600), 0.03125rem);
+}
+
+.title-bold-large {
+  @include m3-type(1.375rem, 1.75rem, 700, var(--text-color-bold), 0rem);
+}
+
+.label-regular-medium {
+  @include m3-type(0.75rem, 0.875rem, 400, var(--label-regular), 0.03125rem);
+}
+
+.label-bold-medium {
+  @include m3-type(0.75rem, 0.875rem, 700, var(--text-color-bold), 0.03125rem);
+}
+
+.label-regular-small {
+  @include m3-type(0.625rem, 0.75rem, 400, var(--text-color-regular), 0.03125rem);
+}
+
+.body-bold-large {
+  @include m3-type(1rem, 1.5rem, 700, var(--text-color-bold), 0.03125rem);
+}
+
+.label-button-large {
+  @include m3-type(0.875rem, 1rem, 500, var(--label-color), 0.00625rem);
+}
+
+.body-regular-medium {
+  @include m3-type(0.875rem, 1.25rem, 400, var(--text-color-regular), 0.015625rem);
+}
+
+.m3-title-large {
+  @extend .title-bold-large;
+}
+
+.m3-label-medium {
+  @extend .label-regular-medium;
+}
+
+.m3-label-large {
+  @extend .label-button-large;
+}
+
+.m3-label-small {
+  @extend .label-button-small;
+}

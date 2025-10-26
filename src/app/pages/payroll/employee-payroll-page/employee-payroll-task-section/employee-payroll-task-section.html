@@ -1,0 +1,45 @@
+<div class="employee-task-payroll-view-wrapper">
+  <ac-table
+    [rows]="payrollRows()"
+    [filterable]="true"
+    [globalFilterFields]="['name', 'description']"
+  >
+    <ng-template #acToolbarActions>
+      <ac-button variant="secondary">Secondary</ac-button>
+      <div class="spacer"></div>
+      <ac-button variant="primary">Primary</ac-button>
+    </ng-template>
+
+    <ng-template #acHeader>
+      <tr>
+        <th class="icon-column"></th>
+        <th acSortableColumn="name">Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Quantity</th>
+        <th class="text-align-r">Rate</th>
+        <th class="action-column"></th>
+      </tr>
+    </ng-template>
+
+    <ng-template #acBody let-row>
+      <tr>
+        <td class="icon-column">
+          @if (!row.hasWarning) {
+          <span class="material-icons warning-icon">error</span>
+          }
+        </td>
+        <td>{{ row.name }}</td>
+        <td>{{ row.description ?? '—' }}</td>
+        <td>{{ row.type | enumDescription : PayrollType : PAYROLL_TYPE_DESCRIPTIONS }}</td>
+        <td>{{ row.quantity }}</td>
+        <td class="text-align-r">{{ row.rateAmount | currencyFormat }}</td>
+        <td>
+          <div class="showOnHover action-column">
+            <ac-button variant="tertiary">action</ac-button>
+          </div>
+        </td>
+      </tr>
+    </ng-template>
+  </ac-table>
+</div>

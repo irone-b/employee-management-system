@@ -1,0 +1,37 @@
+<div class="employee-payroll-summary-section-wrapper">
+  @if (summary; as s) {
+  <section class="header-section">
+    <div class="title-section">
+      <ac-button variant="icon">
+        <span class="material-icons">arrow_back</span>
+      </ac-button>
+
+      <div class="title-bold-large ellipsis">{{ s.employee.name }}</div>
+    </div>
+    <div class="details-section">
+      <div class="text-stack-left-aligned">
+        <span class="label-regular-medium"> No. </span>
+        <span class="label-bold-medium">{{ s.employee.number }}</span>
+      </div>
+      <div class="text-stack-left-aligned">
+        <span class="label-regular-medium"> Team </span>
+        <span class="label-bold-medium">{{ s.employee.team }}</span>
+      </div>
+    </div>
+  </section>
+  <section class="overview-section">
+    <span class="body-bold-large">Overview</span>
+    <div class="card-section">
+      @for (it of overview; track it.label) {
+      <ac-stats-item [label]="it.label" [amount]="it.amount" [icon]="it.icon" [tone]="it.tone" />
+      }
+    </div>
+
+    <div class="card-section">
+      @for (it of contributions; track it.label) {
+      <ac-stats-item [label]="it.label" [amount]="it.amount" [icon]="it.icon" [tone]="it.tone" />
+      }
+    </div>
+  </section>
+  }
+</div>

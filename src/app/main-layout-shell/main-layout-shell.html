@@ -1,0 +1,20 @@
+<div class="main-layout-shell">
+  <aside class="aside-wrapper">
+    <div class="padding-top-24 padding-bottom-16">
+      <img src="../../assets/images/logo.svg" alt="App Logo" />
+    </div>
+    <nav class="main-nav">
+      <ac-nav-item [title]="'Item 2'" [icon]="'home'" [isActive]="false"> </ac-nav-item>
+      <ac-nav-item [title]="'Item 2'" [icon]="'home'" [isActive]="false"> </ac-nav-item>
+      <ac-nav-item [title]="'Item 3'" [icon]="'home'" [isActive]="false"> </ac-nav-item>
+      <ac-nav-item [title]="'Item 4'" [icon]="'home'" [isActive]="false"> </ac-nav-item>
+      <ac-nav-item [title]="'Item 5'" [icon]="'home'" [isActive]="true"> </ac-nav-item>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <!-- TODO: This will be a router outlet in futue when routing is setup for the main navigation, for now we will just default to the employee payroll page -->
+    <!-- <router-outlet></router-outlet> -->
+    <employee-payroll-page />
+  </main>
+</div>
